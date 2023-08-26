@@ -27,7 +27,6 @@ class S21Matrix {
   S21Matrix InverseMatrix();
 
  private:
-  // Attributes
   int rows_, cols_;  // Rows and columns
   double** matrix_;  // Pointer to the memory where the matrix is allocated
   double determ;

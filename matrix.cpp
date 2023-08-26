@@ -189,11 +189,58 @@ S21Matrix S21Matrix::CalcComplements() {
       result.matrix_[i][j] = num;  // Store the complement value
     }
   }
-
   return result;
 }
 
-int main() {
-  std::cout << "hello";
-  return 0;
+S21Matrix S21Matrix::operator+(const S21Matrix& other) {
+  S21Matrix result(rows_, cols_);
+  result.SumMatrix(other);
+  return result;
+}
+
+S21Matrix S21Matrix::operator-(const S21Matrix& other) {
+  S21Matrix result(rows_, cols_);
+  result.SubMatrix(other);
+  return result;
+}
+
+S21Matrix S21Matrix::operator*(const S21Matrix& other) {
+  S21Matrix result(rows_, cols_);
+  result.MulMatrix(other);
+  return result;
+}
+
+S21Matrix S21Matrix::operator*(const S21Matrix, const double num) {
+  S21Matrix result(rows_, cols_);
+  result.MulNumber(num);
+  return result;
+}
+
+S21Matrix S21Matrix::operator==(const S21Matrix& other) {
+  return EqMatrix(other);
+}
+
+S21Matrix S21Matrix::operator=(const S21Matrix& other) {
+  S21Matrix(other);
+  return *this;
+}
+
+S21Matrix S21Matrix::operator+=(const S21Matrix& other) {
+  SumMatrix(other);
+  return *this;
+}
+
+S21Matrix S21Matrix::operator-=(const S21Matrix& other) {
+  SubMatrix(other);
+  return *this;
+}
+
+S21Matrix S21Matrix::operator*=(const S21Matrix, const double num) {
+  MultNumber(number);
+  return *this;
+}
+
+S21Matrix S21Matrix::operator*=(const S21Matrix& other) {
+  MultNumber(other);
+  return *this;
 }
