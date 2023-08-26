@@ -1,4 +1,4 @@
-#include "matrix.h"
+#include "s21_matrix_oop.h"
 
 S21Matrix::S21Matrix() : rows_(2), cols_(2) {
   matrix_ = new double*[rows_];
@@ -15,17 +15,17 @@ S21Matrix::~S21Matrix() {
 }
 
 S21Matrix::S21Matrix(int rows, int cols) : rows_(rows), cols_(cols) {
-  in(rows < 0 || cols < 0) {
-    throw std::error("rows and cols suppose to be more that 0");
+  if (rows < 0 || cols < 0) {
+    throw std::runtime_error("rows and cols suppose to be more that 0");
   }
   matrix_ = new double*[rows];
   if (matrix_ == nullptr) {
-    throw std::error("Coulnt allocate memo")
+    throw std::runtime_error("Coulnt allocate memo")
   }
   for (int i = 0; i < rows_; i++) {
     matrix_[i] = new double[cols];
     if (matrix_[i] == nullptr) {
-      throw std::error("Coulnt allocate memo");
+      throw std::runtime_error("Coulnt allocate memo");
     }
   }
 }

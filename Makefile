@@ -2,7 +2,7 @@ CC = g++
 CFLAGS = -Wall
 
 TARGET = MatrixProject
-SRCS = matrix.cpp
+SRCS = s21_matrix_oop.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 $(TARGET): $(OBJS)

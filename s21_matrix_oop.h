@@ -25,10 +25,21 @@ class S21Matrix {
   double Determinant();  // Calculates and returns the determinant of the
                          // current matrix
   S21Matrix InverseMatrix();
+  S21Matrix operator+(const S21Matrix& other);
+  S21Matrix operator-(const S21Matrix& other);
+  S21Matrix operator*(const S21Matrix& other);
+  S21Matrix operator*(const S21Matrix, const double num);
+  S21Matrix operator==(const S21Matrix& other);
+  S21Matrix operator=(const S21Matrix& other);
+  S21Matrix operator+=(const S21Matrix& other);
+  S21Matrix operator-=(const S21Matrix& other);
+  S21Matrix operator+=(const S21Matrix& other);
+  S21Matrix operator*=(const S21Matrix& other);
+  S21Matrix operator*=(const S21Matrix, const double num)
 
- private:
-  int rows_, cols_;  // Rows and columns
-  double** matrix_;  // Pointer to the memory where the matrix is allocated
+      private : int rows_,
+                cols_;  // Rows and columns
+  double** matrix_;     // Pointer to the memory where the matrix is allocated
   double determ;
   double mult;
   double result;
