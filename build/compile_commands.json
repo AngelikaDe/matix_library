@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/Users/angelika/Desktop/s_21/matix_library/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -O3 -DNDEBUG -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.4 -Wall -Werror -Wextra -Wpedantic -o CMakeFiles/s21_matrix_oop.dir/s21_matrix_oop.cpp.o -c /Users/angelika/Desktop/s_21/matix_library/s21_matrix_oop.cpp",
+  "file": "/Users/angelika/Desktop/s_21/matix_library/s21_matrix_oop.cpp",
+  "output": "CMakeFiles/s21_matrix_oop.dir/s21_matrix_oop.cpp.o"
+},
+{
+  "directory": "/Users/angelika/Desktop/s_21/matix_library/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -O3 -DNDEBUG -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.4 -Wall -Werror -Wextra -Wpedantic -o CMakeFiles/tests.dir/tests/arithmetic_test.cc.o -c /Users/angelika/Desktop/s_21/matix_library/tests/arithmetic_test.cc",
+  "file": "/Users/angelika/Desktop/s_21/matix_library/tests/arithmetic_test.cc",
+  "output": "CMakeFiles/tests.dir/tests/arithmetic_test.cc.o"
+},
+{
+  "directory": "/Users/angelika/Desktop/s_21/matix_library/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -O3 -DNDEBUG -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.4 -Wall -Werror -Wextra -Wpedantic -o CMakeFiles/tests.dir/tests/class_test.cc.o -c /Users/angelika/Desktop/s_21/matix_library/tests/class_test.cc",
+  "file": "/Users/angelika/Desktop/s_21/matix_library/tests/class_test.cc",
+  "output": "CMakeFiles/tests.dir/tests/class_test.cc.o"
+},
+{
+  "directory": "/Users/angelika/Desktop/s_21/matix_library/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -O3 -DNDEBUG -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.4 -Wall -Werror -Wextra -Wpedantic -o CMakeFiles/tests.dir/tests/helpers_test.cc.o -c /Users/angelika/Desktop/s_21/matix_library/tests/helpers_test.cc",
+  "file": "/Users/angelika/Desktop/s_21/matix_library/tests/helpers_test.cc",
+  "output": "CMakeFiles/tests.dir/tests/helpers_test.cc.o"
+},
+{
+  "directory": "/Users/angelika/Desktop/s_21/matix_library/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -O3 -DNDEBUG -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.4 -Wall -Werror -Wextra -Wpedantic -o CMakeFiles/tests.dir/tests/linear_test.cc.o -c /Users/angelika/Desktop/s_21/matix_library/tests/linear_test.cc",
+  "file": "/Users/angelika/Desktop/s_21/matix_library/tests/linear_test.cc",
+  "output": "CMakeFiles/tests.dir/tests/linear_test.cc.o"
+},
+{
+  "directory": "/Users/angelika/Desktop/s_21/matix_library/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -O3 -DNDEBUG -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.4 -Wall -Werror -Wextra -Wpedantic -o CMakeFiles/tests.dir/tests/tests.cc.o -c /Users/angelika/Desktop/s_21/matix_library/tests/tests.cc",
+  "file": "/Users/angelika/Desktop/s_21/matix_library/tests/tests.cc",
+  "output": "CMakeFiles/tests.dir/tests/tests.cc.o"
+}
+]

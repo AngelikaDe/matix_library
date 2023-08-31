@@ -65,7 +65,7 @@ TEST(TestArithmetic, SubtestMulNum) {
   mat.MatrixFill(tmp);
   mat2.MatrixFill(tmp2);
   mat3.MatrixFill(tmp3);
-  mat.MultNumber(0);
+  mat.MulNumber(0);
   ASSERT_EQ(mat.EqMatrix(mat3), true);
 }
 

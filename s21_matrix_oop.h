@@ -1,5 +1,6 @@
-#include <iostream>
+#include <math.h>
 
+#include <iostream>
 class S21Matrix {
  public:
   S21Matrix();   // Default constructor
@@ -28,19 +29,21 @@ class S21Matrix {
   S21Matrix operator+(const S21Matrix& other);
   S21Matrix operator-(const S21Matrix& other);
   S21Matrix operator*(const S21Matrix& other);
-  S21Matrix operator*(const S21Matrix, const double num);
-  S21Matrix operator==(const S21Matrix& other);
-  S21Matrix operator=(const S21Matrix& other);
-  S21Matrix operator+=(const S21Matrix& other);
-  S21Matrix operator-=(const S21Matrix& other);
-  S21Matrix operator+=(const S21Matrix& other);
-  S21Matrix operator*=(const S21Matrix& other);
-  S21Matrix operator*=(const S21Matrix, const double num)
+  S21Matrix operator*(const double num) const;
+  bool operator==(const S21Matrix& other);
+  S21Matrix& operator=(const S21Matrix& other);
+  S21Matrix& operator+=(const S21Matrix& other);
+  S21Matrix& operator-=(const S21Matrix& other);
+  S21Matrix& operator*=(const S21Matrix& other);
+  S21Matrix& operator*=(const double num);
+  double& operator()(int i, int j);
 
-      private : int rows_,
-                cols_;  // Rows and columns
-  double** matrix_;     // Pointer to the memory where the matrix is allocated
-  double determ;
+  void MatrixFill(const double* arr);
+
+ private:
+  int rows_,
+      cols_;         // Rows and columns
+  double** matrix_;  // Pointer to the memory where the matrix is allocated
   double mult;
   double result;
 };

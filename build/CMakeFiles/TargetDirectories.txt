@@ -1,0 +1,5 @@
+/Users/angelika/Desktop/s_21/matix_library/build/CMakeFiles/s21_matrix_oop.dir
+/Users/angelika/Desktop/s_21/matix_library/build/CMakeFiles/tests.dir
+/Users/angelika/Desktop/s_21/matix_library/build/CMakeFiles/test.dir
+/Users/angelika/Desktop/s_21/matix_library/build/CMakeFiles/edit_cache.dir
+/Users/angelika/Desktop/s_21/matix_library/build/CMakeFiles/rebuild_cache.dir
