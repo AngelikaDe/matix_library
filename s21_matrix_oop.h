@@ -1,5 +1,4 @@
-#include <math.h>
-
+#include <cmath>
 #include <iostream>
 class S21Matrix {
  public:
@@ -10,6 +9,9 @@ class S21Matrix {
       int cols);  // Parametrized constructor with number of rows and columns
   S21Matrix(const S21Matrix& other);  // Copy constructor
   S21Matrix(S21Matrix&& other);       // Move constructor
+  int GetRows();
+  int GetCols();
+  void S21RemoveMatrix();
   void SumMatrix(
       const S21Matrix& other);  // Adds the second matrix to the current one
   bool EqMatrix(
@@ -39,6 +41,8 @@ class S21Matrix {
   double& operator()(int i, int j);
 
   void MatrixFill(const double* arr);
+  void SetRows(int num);
+  void SetCols(int num);
 
  private:
   int rows_,

@@ -1,12 +1,12 @@
 #include "tests.h"
 
 TEST(TestLinear, SubtestTranspose) {
-  S21Matrix mat = S21Matrix(3, 1);
-  S21Matrix mat2 = S21Matrix(1, 3);
-  double tmp[16] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16};
-  // double tmp2[16] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+  S21Matrix mat = S21Matrix(3, 2);
+  S21Matrix mat2 = S21Matrix(2, 3);
+  double tmp[16] = {1, 4, 2, 5, 3, 6};
+  double tmp2[16] = {1, 2, 3, 4, 5, 6};
   mat.MatrixFill(tmp);
-  mat2.MatrixFill(tmp);
+  mat2.MatrixFill(tmp2);
   ASSERT_EQ(mat.Transpose() == mat2, true);
 }
 
@@ -56,15 +56,15 @@ TEST(TestLinear, SubtestDeterminantError) {
   ASSERT_THROW(mat.Determinant(), std::invalid_argument);
 }
 
-// TEST(TestLinear, SubtestInverseMatrix) {
-//   S21Matrix mat = S21Matrix(3, 3);
-//   S21Matrix mat2 = S21Matrix(3, 3);
-//   double tmp1[9] = {2, 5, 7, 6, 3, 4, 5, -2, -3};
-//   double tmp2[9] = {1, -1, 1, -38, 41, -34, 27, -29, 24};
-//   mat.MatrixFill(tmp1);
-//   mat2.MatrixFill(tmp2);
-//   ASSERT_EQ(mat.InverseMatrix() == mat2, true);
-// }
+TEST(TestLinear, SubtestInverseMatrix) {
+  S21Matrix mat = S21Matrix(3, 3);
+  S21Matrix mat2 = S21Matrix(3, 3);
+  double tmp1[9] = {2, 5, 7, 6, 3, 4, 5, -2, -3};
+  double tmp2[9] = {1, -1, 1, -38, 41, -34, 27, -29, 24};
+  mat.MatrixFill(tmp1);
+  mat2.MatrixFill(tmp2);
+  ASSERT_EQ(mat.InverseMatrix() == mat2, true);
+}
 
 TEST(TestLinear, SubtestInverseMatrixError1) {
   S21Matrix mat = S21Matrix(3, 2);
